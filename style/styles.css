@@ -1,0 +1,95 @@
+@font-face {
+  font-family: kosmos;
+  src: url(/fonts/Kosmos129.ttf);
+}
+
+body {
+  box-shadow: none;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --index: calc(1vh + 1vw);
+  --color: #fff;
+  --padding: 16px;
+}
+
+.first_block {
+  width: 100%;
+  height: 100%;
+  padding: var(--padding);
+  margin-left: calc(var(--index) * 2);
+  z-index: 0;
+}
+
+.main_text {
+  z-index: 100;
+  background-image: url(/img/текстура.png);
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: calc(var(--index) * 1.5);
+}
+
+.text {
+  max-width: 539px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: calc(var(--index) * 1.2);
+  z-index: 1;
+}
+
+
+
+/* .Demik ::before{
+content: '';
+background-image: url(./img/Group\ 47276.png);
+background-size: calc(var(--index) * 70);
+opacity: 0.5;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+} */
+
+
+
+@keyframes start {
+0% {
+    opacity: 0.76;
+    transform: rotateX("156deg"), rotateY("86deg");
+   
+  }
+50% {
+    opacity: 0.96;
+    transform: rotateX("26deg"), rotateY("46deg");
+    
+    
+  }
+100% {
+opacity: 1;
+transform: rotateX("96deg"), rotateY("86deg");
+  
+  }
+}
+
+@keyframes text {
+0% {
+    opacity: 0;
+    transform: rotateX("156deg"), rotateY("86deg");
+   
+  }
+
+100% {
+opacity: 1;
+transform: rotateX("96deg"), rotateY("86deg");
+  
+  }
+}
